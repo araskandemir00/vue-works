@@ -5,3 +5,4 @@ Vue.js is a javascript framework that makes building interactive and reactive we
 <strong>Different ways of Utilizing Vue</strong><br>
 1-Vue can be used to control parts of HTML pages or entire pages("Widget" approach on a multi-page-application).<br>
 2-Vue can also be used to control the entire frontend of a web application(SPA approach).<br> 
+<link ref="https://academind.com/tutorials/angular-vs-react-vs-vue-my-thoughts">Angular vs React vs Vue</link>
