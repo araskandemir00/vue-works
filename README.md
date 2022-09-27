@@ -1,5 +1,5 @@
 # vue-works
-<strong>Vue.js sample projects</strong><br>
+<strong>CHAPTER 1 & CHAPTER 2</strong><br>
 What is Vue.js?<br>
 Vue.js is a javascript framework that makes building interactive and reactive web frontends easier.<br>
 <strong>Different ways of Utilizing Vue</strong><br>
@@ -23,3 +23,17 @@ Watch:<br>
 -Not used directly in template<br>
 -Allows you to run any code in reaction to some changed data(e.g. send Http request etc.)<br>
 -Use for any non-data update you want to make<br>
+<strong>CHAPTER 1 & CHAPTER 2 Summary</strong><br>
+DOM & Templeates<br>
+-Vue can be used to define the goal instead of the steps(-> declarative approach)<br>
+-Connect Vue to HTML via <strong>"mount"</strong> Vue <strong> then renders the real DOM</strong><br>
+based on the connected template<br>
+Data & Event Bindings<br>
+-You can bind data via interpolation ({{}}) or the <strong>v-bind(":")</strong> directive<br>
+-You listen for events via <strong> via v-on("@")</strong><br>
+Reactive<br>
+-Vue updates the real DOM for you when bound data changes<br>
+-<strong>Computed properties</strong> and <strong>watchers</strong> allow you to react to data changes<br>
+Styling<br>
+-Dynamic CSS class and inline style bindings are supported by Vue<br>
+-Vue offers multiple <strong>special syntaxes</strong> (object-based, array-based) for efficient bindings<br>
