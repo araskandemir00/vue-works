@@ -7,16 +7,17 @@ const app = Vue.createApp ({
             fullTaskMessage: 'You have enough tasks to finish - please delete some!',
             emptyAlertMessagge: 'Please fill the field properly',
             visibility: true,
+            buttonName: 'Hide',
         }
     },
-    computed: {
-        handleClass() {
-            return {
-                visible: this.visibility,
-                hidden: !this.visibility,
-            };
-        }
-    },
+    // computed: {
+    //     handleClass() {
+    //         return {
+    //             visible: this.visibility,
+    //             hidden: !this.visibility,
+    //         };
+    //     }
+    // },
     methods: {
         addTask() {
             if(this.enteredTaskValue === '') {
@@ -28,6 +29,11 @@ const app = Vue.createApp ({
         },
         handleVisibility() {
             this. visibility = !this. visibility;
+            if(this.visibility != true){
+                this.buttonName = 'Show';
+            } else {
+                this.buttonName = 'Hide';
+            }
         },
     },
 });
