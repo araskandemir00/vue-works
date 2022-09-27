@@ -54,3 +54,24 @@
     <li>Dynamic CSS class and inline style bindings are supported by Vue</li>
     <li>Vue offers multiple <strong>special syntaxes</strong> (object-based, array-based) for efficient bindings</li>
 </ul>
+<h2>CHAPTER 3 Summary</h2>
+<h3>Conditional Content</h3>
+<ul>
+    <li><strong>v-if</strong>(and <strong>v-show</strong>) allows you to render content <strong>only if a certain condition is met</strong></li>
+    <li>v-if can be combined with <strong>v-else</strong> and <strong>v-else-if</strong> (only on direct sibling elements!)</li>
+</ul>
+<h3>v-for Variations</h3>
+<ul>
+    <li>You can extract <strong>values</strong>, values and indexes or values, <strong>keys</strong> and indexes</li>
+    <li>If you need v-for and v-if, <strong>DON'T use them on same element</strong>. Use a wrapper with v-if instead.</li>
+</ul>
+<h3>Lists</h3>
+<ul>
+    <li>v-for can be used to render multiple elements dynamically</li>
+    <li>v-for can be used with arrays, objects and ranges(numbers)</li>
+</ul>
+<h3>Keys</h3>
+<ul>
+    <li>Vue <strong>re-uses DOM elements to optimize performance <strong>-></strong> This can lead to bug if elements contain state</strong></li>
+    <li>Bind the <strong>key</strong> attribute to a unique value to help Vue identify elements that belong to list content</li>
+</ul>
