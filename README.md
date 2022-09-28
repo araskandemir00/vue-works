@@ -114,4 +114,4 @@
     </tr>
 </table>
 <h2>Vue Instance Lifecycle</h2>
-<a><img scr="./vue-lifecycle.png"></a>
+<a href="vue-lifecycle.png" />
