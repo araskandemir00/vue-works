@@ -75,3 +75,43 @@
     <li>Vue <strong>re-uses DOM elements to optimize performance <strong>-></strong> This can lead to bug if elements contain state</strong></li>
     <li>Bind the <strong>key</strong> attribute to a unique value to help Vue identify elements that belong to list content</li>
 </ul>
+<h2>How Vue Updates the DOM</h2>
+<table>
+    <tr>
+        <th>Vue Instance</th>
+        <th>Virtual DOM</th>
+        <th>Browser DOM</th>
+    </tr>
+    <tr>
+        <td>Stores data, computed properties, methods, ...</td>
+        <td>JS-based DOM which exist only memory</td>
+        <td>Vue-controlled template is rendered in the DOM</td>
+    </tr>
+    <tr>
+        <td>title: 'Hello',<br>
+            text: 'Not the title'
+        </td>
+        <td> {el: 'h2', child: 'Hello!' }, ...</td>
+        <td>&#60; h2 &#62; Hello &#60;/ h2 &#62;<br>
+            &#60; p &#62; Not the title &#60; /p &#62;
+        </td>
+    </tr>
+    <tr>
+        <td>Data and computed properties may change (e.g. because of user input)</td>
+        <td></td>
+        <td>Updates should be reflected, but Vue should <strong>not</strong> re-render everything</td>
+    </tr>
+    <tr>
+        <td>
+            <strong>title: 'Hi there!'</strong><br>
+            text: 'Not the title'
+        </td>
+        <td></td>
+        <td>
+            <strong>h2 &#62; Hi there! &#60;/ h2 &#62;<br></strong>
+            &#60; p &#62; Not the title &#60; /p &#62;
+        </td>
+    </tr>
+</table>
+<h2>Vue Instance Lifecycle</h2>
+<img scr="./vue-lifecycle.PNG">
