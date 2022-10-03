@@ -58,7 +58,7 @@
     list-style: none;
     }
 
-    #app h2, #app form {
+    #app h2, #app form, #app h3 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     margin: 1rem auto;
     border-radius: 10px;

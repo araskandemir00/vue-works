@@ -1,7 +1,7 @@
 <template>
     <section>
         <h2>{{ username }}</h2>
-        <h2>{{ userage }}</h2>
+        <h3>{{ userage }}</h3>
     </section>
 </template>
 
