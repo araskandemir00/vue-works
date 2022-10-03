@@ -12,6 +12,7 @@
 
 <script>
     export default {
+        emits: ['set-data'],
         data() {
             return {
                 enteredName: '',
@@ -20,7 +21,7 @@
         },
         methods: {
             submitData() {
-                this.$$emit('set-data', this.enteredName, this.enteredAge);
+                this.$emit('set-data', this.enteredName, this.enteredAge);
             }
         }
     }
