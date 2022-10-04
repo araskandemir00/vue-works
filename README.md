@@ -116,3 +116,24 @@
 <h2>Vue Instance Lifecycle</h2>
 <img src="https://github.com/araskandemir00/vue-works/blob/develop/vue-lifecycle.PNG?raw=true" alt="vue-lifecycle" />
 
+<h2>Component Communication</h2>
+<h3>Component Communication Overview</h3>
+<ul>
+    <li>Components are used to build UIs by combining them</li>
+    <li>Components build <strong>"parent-child"</strong> relations and use "<strong>undirectional</strong> data flows" for communication</li>
+</ul>
+<h3>Props (parent => child )</h3>
+<ul>
+    <li><strong>"Props</strong> are used to <strong>pass data from a parent to a child</strong> component</li>
+    <li>Props should be <strong>defined in advance,</strong> possibly in great detail (type, required etc)</li>
+</ul>
+<h3>Custom events (child => parent)</h3>
+<ul>
+    <li><strong>"Custom events"</strong> are <strong>emitted</strong> (via <strong>$emit</strong>) to trigger a method in a parent component</li>
+    <li>Custom events can <strong>carry data</strong> which can be used in the called method</li>
+</ul>
+<h3>Provide-Inject</h3>
+<ul>
+    <li>If data needs to be passed <strong>across multiple components</strong> ("pass-through"), you can use <strong>provide/inject</strong></li>
+    <li><strong>Provide data in a parent</strong> component, <strong>inject it into a child</strong> component</li>
+</ul>
